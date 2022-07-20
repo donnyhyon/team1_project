@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <a href="/choose_upload_method" class="govuk-back-link">Back</a>
+
+    <h1 class="govuk-heading-xl">Upload your document</h1>
+
+    <div class="govuk-form-group">
+      <div class="govuk-inset-text">
+        The file must be smaller than 2MB
+      </div>
+      <input class="govuk-file-upload" id="file-upload-1" name="file-upload-1" type="file">
+    </div>
+
+    <a href="/confirm_choice">
+      <button class="govuk-button" data-module="govuk-button">Continue</button>
+    </a>
+  </div>
+</div>
+{% endblock %}
