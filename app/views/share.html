@@ -1,0 +1,55 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Share Code – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block header %}
+  <!-- Blank header with no service name for the start page -->
+  {{ govukHeader() }}
+{% endblock %}
+
+{% block beforeContent %}
+  <a href="/" class="govuk-back-link">Back</a>
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-xl">
+        Your application share code
+      </h1>
+      <p>
+      <p>
+      <h2 class="govuk-heading-m">
+        Please copy and paste this code into your application
+      </h2>
+      <div class="govuk-notification-banner" role="region" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner">
+        <div class="govuk-notification-banner__header">
+          <h2 class="govuk-notification-banner__title" id="govuk-notification-banner-title">
+            Your 6 digit share code
+          </h2>
+        </div>
+        <div class="govuk-notification-banner__content">
+          <div class="govuk-!-text-align-centre">
+            <p class="govuk-notification-banner__heading">
+              123456
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <p>
+      <p>
+      <button class="govuk-button" data-module="govuk-button">
+        Request a new code
+      </button>
+      <p>
+      <button class="govuk-button" data-module="govuk-button">
+        View all documents
+      </button>
+      <p>
+
+    </div>
+  </div>
+{% endblock %}
