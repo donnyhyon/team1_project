@@ -8068,3 +8068,11 @@ input:checked + .slider:before {
 .slider.round:before {
   border-radius: 50%;
 }
+
+.buttons {
+  margin-top: 5%;
+}
+
+.yes-no {
+  margin-right: 5%;
+}
