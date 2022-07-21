@@ -5290,3 +5290,18 @@ input:checked + .slider:before {
 .yes-no {
   margin-right: 5%;
 }
+
+.info-small {
+  width: 3%;
+  height: 3%;
+}
+
+.switch-cell {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.search-service {
+  margin-bottom: 5%;
+}

@@ -17,52 +17,92 @@
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
       <h1 class="govuk-heading-xl">
-        Control who has access to your data
+        Choose which services can see your documents
       </h1>
 
+      <div class="govuk-form-group">
+        <div class="search-service">
+          <label class="govuk-label" for="address-line-2">
+            Search a service
+          </label>
+          <input class="govuk-input" id="address-line-2" name="address-line-2" type="text" autocomplete="address-line2" value="Search a service">
+        </div>
+        <div class="choose-service">
+          <label class="govuk-label" for="sort">
+            Choose a service:
+          </label>
+          
+          <select class="govuk-select" id="sort" name="sort">
+            <option value="published" selected>Blue Badge</option>
+            <option value="updated">Blue Badge</option>
+            <option value="views">Child Benefit</option>
+            <option value="comments">Education</option>
+          </select>
+        </div>
+      </div>
 
       <table class="govuk-table">
         <thead class="govuk-table__head">
           <tr class="govuk-table__row">
             <th scope="col" class="govuk-table__header">Service</th>
-            <th scope="col" class="govuk-table__header">Consent</th>
+            <th scope="col" class="govuk-table__header">Consent to share</th>
           </tr>
         </thead>
         <tbody class="govuk-table__body">
           <tr class="govuk-table__row">
-            <th scope="row" class="govuk-table__header">Housing</th>
-            <td class="govuk-table__cell">
+            <th scope="row" class="govuk-table__header">
+              Housing 
+              <img src="/public/images/information.jpeg" alt="information symbol" class="info-small">
+            </th>
+            <td class="govuk-table__cell switch-cell">
+              <p>No</p>
               <label class="switch">
                 <input type="checkbox">
                 <span class="slider round"></span>
               </label>
+              <p>Yes</p>
             </td>
           </tr>
           <tr class="govuk-table__row">
-            <th scope="row" class="govuk-table__header">Education</th>
-            <td class="govuk-table__cell">
+            <th scope="row" class="govuk-table__header">
+              Education
+              <img src="/public/images/information.jpeg" alt="information symbol" class="info-small">
+            </th>
+            <td class="govuk-table__cell switch-cell">
+              <p>No</p>
               <label class="switch">
                 <input type="checkbox">
                 <span class="slider round"></span>
               </label>
+              <p>Yes</p>
             </td>
           </tr>
           <tr class="govuk-table__row">
-            <th scope="row" class="govuk-table__header">Child Benefit</th>
-            <td class="govuk-table__cell">
+            <th scope="row" class="govuk-table__header">
+              Child Benefit
+              <img src="/public/images/information.jpeg" alt="information symbol" class="info-small">
+            </th>
+            <td class="govuk-table__cell switch-cell">
+              <p>No</p>
               <label class="switch">
                 <input type="checkbox">
                 <span class="slider round"></span>
               </label>
+              <p>Yes</p>
             </td>
           </tr>
           <tr class="govuk-table__row">
-            <th scope="row" class="govuk-table__header">Universal Credit</th>
-            <td class="govuk-table__cell">
+            <th scope="row" class="govuk-table__header">
+              Universal Credit
+              <img src="/public/images/information.jpeg" alt="information symbol" class="info-small">
+            </th>
+            <td class="govuk-table__cell switch-cell">
+              <p>No</p>
               <label class="switch">
                 <input type="checkbox">
                 <span class="slider round"></span>
               </label>
+              <p>Yes</p>
             </td>
           </tr>
         </tbody>

@@ -91,3 +91,22 @@ $govuk-assets-path: '/govuk/assets/';
   .yes-no {
     margin-right: 5%
   }
+
+  .info-small {
+    width: 3%;
+    height: 3%;
+  }
+
+  .switch-cell {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  // .choose-service {
+    
+  // }
+
+  .search-service {
+    margin-bottom: 5%;
+  }
