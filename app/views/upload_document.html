@@ -4,6 +4,10 @@
   Upload your document – {{ serviceName }} – GOV.UK Prototype Kit
 {% endblock %}
 
+{% block beforeContent %}
+<a href="javascript:window.history.back()" class="govuk-back-link">Back</a>
+{% endblock %}
+
 {% block content %}
 
 <div class="govuk-grid-row">
